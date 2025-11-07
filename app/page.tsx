@@ -2,7 +2,9 @@ import About from "@/components/About";
 import ChildrenGallery from "@/components/ChildrenGallery";
 import ChristmasParty from "@/components/ChristmasParty";
 import DonationKits from "@/components/DonationKits";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import Sponsorship from "@/components/Sponsorship";
 
 
 export default function Home() {
@@ -13,6 +15,8 @@ export default function Home() {
       <DonationKits />
       <ChristmasParty />
       <ChildrenGallery />
+      <Sponsorship />
+      <Footer />
     </div>
   );
 }

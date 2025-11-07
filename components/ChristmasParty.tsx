@@ -27,8 +27,8 @@ export default function ChristmasParty() {
 
             <div className="space-y-6">
               <div className="flex items-center gap-4 p-6 bg-card rounded-xl shadow-soft">
-                <div className="bg-primary/10 p-3 rounded-lg">
-                  <Calendar className="h-8 w-8 text-primary" />
+                <div className="bg-blue-700/10 p-3 rounded-lg">
+                  <Calendar className="h-8 w-8 text-blue-700" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg">Data</h3>
@@ -37,8 +37,8 @@ export default function ChristmasParty() {
               </div>
 
               <div className="flex items-center gap-4 p-6 bg-card rounded-xl shadow-soft">
-                <div className="bg-accent/10 p-3 rounded-lg">
-                  <Clock className="h-8 w-8 text-accent" />
+                <div className="bg-red-600/10 p-3 rounded-lg">
+                  <Clock className="h-8 w-8 text-red-600" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg">Horário</h3>
@@ -47,8 +47,8 @@ export default function ChristmasParty() {
               </div>
 
               <div className="flex items-center gap-4 p-6 bg-card rounded-xl shadow-soft">
-                <div className="bg-secondary/10 p-3 rounded-lg">
-                  <MapPin className="h-8 w-8 text-secondary" />
+                <div className="bg-green-600/10 p-3 rounded-lg">
+                  <MapPin className="h-8 w-8 text-green-600" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg">Local</h3>
@@ -58,55 +58,55 @@ export default function ChristmasParty() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/20">
+          <div className="bg-gradient-to-r from-blue-700/5 to-red-600/5 rounded-2xl p-8 border border-blue-700/20">
             <div className="flex items-center gap-3 mb-6">
-              <PartyPopper className="h-8 w-8 text-primary" />
+              <PartyPopper className="h-8 w-8 text-blue-700" />
               <h3 className="text-2xl font-bold">O que teremos na festa?</h3>
             </div>
             
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
               <div className="flex items-center gap-2">
-                <span className="text-primary">🌭</span>
+                <span className="text-blue-700">🌭</span>
                 <span>Cachorro quente</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-primary">🧀</span>
+                <span className="text-blue-700">🧀</span>
                 <span>Pães de queijo</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-primary">🎂</span>
+                <span className="text-blue-700">🎂</span>
                 <span>Bolos</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-primary">🥤</span>
+                <span className="text-blue-700">🥤</span>
                 <span>Refrigerantes e sucos</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-primary">🍿</span>
+                <span className="text-blue-700">🍿</span>
                 <span>Pipoca</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-primary">🍦</span>
+                <span className="text-blue-700">🍦</span>
                 <span>Dindin</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-primary">🎨</span>
+                <span className="text-blue-700">🎨</span>
                 <span>Pintura de rosto</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-primary">🎈</span>
+                <span className="text-blue-700">🎈</span>
                 <span>Balão mania</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-primary">🤸</span>
+                <span className="text-blue-700">🤸</span>
                 <span>2 camas elásticas</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-primary">🏰</span>
+                <span className="text-blue-700">🏰</span>
                 <span>Brinquedo inflável</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-primary">🎉</span>
+                <span className="text-blue-700">🎉</span>
                 <span>Muita diversão!</span>
               </div>
             </div>

@@ -47,7 +47,7 @@ export default function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="border-2 border-white text-white hover:bg-white/20 bg-transparent backdrop-blur-sm"
+            className="border-2 border-white text-white hover:bg-white bg-transparent backdrop-blur-sm"
             onClick={() =>
               document
                 .getElementById("children")
@@ -63,7 +63,7 @@ export default function Hero() {
           <p className="text-white/90 text-sm md:text-base mb-2">
             PIX CNPJ:
           </p>
-          <div className="font-mono text-white bg-white/20 px-4 py-2 rounded-lg backdrop-blur-sm inline-block">
+          <div className="font-mono text-white bg-blue-700 px-4 py-2 rounded-lg backdrop-blur-sm inline-block">
             50.615.676/0001-68
           </div>
         </div>

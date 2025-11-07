@@ -23,11 +23,11 @@ export default function DonationKits() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-lg transition-all hover:-translate-y-2 border-2 border-primary/20">
-              <div className="bg-gradient-to-br from-primary to-primary/80 w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-glow">
+            <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-lg transition-all hover:-translate-y-2 border-2 border-blue-700/20">
+              <div className="bg-gradient-to-br from-blue-700 to-blue-700/80 w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-glow">
                 <Sparkles className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-primary">
+              <h3 className="text-2xl font-bold mb-4 text-blue-700">
                 Kit Natal Completo
               </h3>
               <div className="text-4xl font-bold mb-6 text-foreground">
@@ -48,7 +48,7 @@ export default function DonationKits() {
             </div>
 
             <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-lg transition-all hover:-translate-y-2">
-              <div className="bg-gradient-to-br from-accent to-accent/80 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-red-600 to-red-600/80 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Gift className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Kit Presente</h3>
@@ -72,7 +72,7 @@ export default function DonationKits() {
             </div>
 
             <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-lg transition-all hover:-translate-y-2">
-              <div className="bg-gradient-to-br from-secondary to-secondary/80 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-green-600 to-green-600/80 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <ShoppingBag className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Kit Festa</h3>
@@ -97,11 +97,11 @@ export default function DonationKits() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8 text-center border border-primary/20">
+          <div className="bg-gradient-to-r from-blue-700/10 to-red-600/10 rounded-2xl p-8 text-center border border-blue-700/20">
             <h3 className="text-2xl font-bold mb-4">PIX para Doações</h3>
             <p className="text-xl mb-4">
               CNPJ:{" "}
-              <span className="font-mono font-bold text-primary">
+              <span className="font-mono font-bold text-blue-700">
                 50.615.676/0001-68
               </span>
             </p>
