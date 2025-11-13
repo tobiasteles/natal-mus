@@ -59,7 +59,7 @@ export default function DonationKits() {
                 <li>✓ 1 brinquedo</li>
                 <li>✓ 1 mochila</li>
                 <li>✓ 1 tênis</li>
-                <li>✓ Auxílio para festa</li>
+                <li>✓ Auxílio para o evento</li>
               </ul>
               <Button
                 className="w-full"
@@ -84,7 +84,7 @@ export default function DonationKits() {
                 <li>✓ 1Kg peito de frango</li>
                 <li>✓ 1 Panetone</li>
                 <li>✓ 1 Refrigerante</li>
-                <li>✓ Auxílio para festa</li>
+                <li>✓ Auxílio para o evento</li>
               </ul>
               <Button
                 className="w-full"

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import heroImage from "@/public/mus3.jpg";
+import heroImage from "@/public/mus-capa.jpg";
 import { Heart } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -28,7 +28,7 @@ export default function Hero() {
       {/* Conteúdo principal */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Campanha de Natal 2025
+          NATAL NA ESTRUTURAL 2025 🎄
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
           Transforme o Natal de uma criança e traga luz onde falta esperança!
@@ -47,7 +47,7 @@ export default function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="border-2 border-white text-white hover:bg-white bg-transparent backdrop-blur-sm"
+            className="border-2 border-white text-white hover:bg-white/10 bg-transparent backdrop-blur-sm"
             onClick={() =>
               document
                 .getElementById("children")

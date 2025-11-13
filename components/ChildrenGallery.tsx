@@ -21,8 +21,8 @@ export default function ChildrenGallery() {
               Conheça Nossas Crianças
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Cada uma tem um sonho. Você pode realizar o sonho de uma criança
-              neste Natal!
+              Cada criança escreveu uma cartinha com um sonho, e você pode
+              ajudar a realizá-lo neste Natal!
             </p>
           </div>
 
