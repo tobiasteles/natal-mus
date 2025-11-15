@@ -5,6 +5,7 @@ import DonationKits from "@/components/DonationKits";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Sponsorship from "@/components/Sponsorship";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 
 export default function Home() {
@@ -13,10 +14,11 @@ export default function Home() {
       <Hero />
       <DonationKits />
       <About />
-      <ChristmasParty />
       <ChildrenGallery />
       <Sponsorship />
+      <ChristmasParty />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

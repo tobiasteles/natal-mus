@@ -12,7 +12,7 @@ export default function Sponsorship() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-muted/30 to-background">
+    <section id="sponsorship" className="py-20 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -23,7 +23,7 @@ export default function Sponsorship() {
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Apadrinhe a Edukhação de uma Criança
+              Apadrinhe a <span className="text-blue-700">Edukhação</span> de uma Criança
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Transforme vidas através da educação. Seja parte da jornada de uma

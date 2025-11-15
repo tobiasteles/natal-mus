@@ -32,15 +32,7 @@ export default function ChildrenGallery() {
             ))}
           </div>
 
-          <div className="bg-gradient-to-r from-blue-700/10 to-green-600/10 rounded-2xl p-8 text-center border border-blue-700/20">
-            <p className="text-lg text-muted-foreground mb-4">
-              Quer ver todas as 40 crianças que atendemos?
-            </p>
-            <p className="text-sm text-muted-foreground">
-              As cartinhas e histórias completas serão adicionadas em breve.
-              Entre em contato pelo WhatsApp para mais informações!
-            </p>
-          </div>
+          
         </div>
       </div>
     </section>

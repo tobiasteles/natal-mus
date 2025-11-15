@@ -64,9 +64,9 @@ export default function ChildCard({ name, age, gift, photo }: ChildCardProps) {
             Quero Doar Este Presente
           </Button>
 
-          <Button variant="outline" className="w-full justify-start" size="sm">
+          <Button variant="outline" className="w-full justify-start" size="sm" onClick={() => document.getElementById('sponsorship')?.scrollIntoView({ behavior: 'smooth' })}>
             <Heart className="mr-2 h-4 w-4" />
-            Conhecer Minha História
+            Apadrinhar Edukhação/2026
           </Button>
         </div>
       </div>

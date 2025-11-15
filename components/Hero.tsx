@@ -2,69 +2,71 @@
 
 import Image from "next/image";
 import heroImage from "@/public/mus-capa.jpg";
-import { Heart } from "lucide-react";
+import { Gift, Heart } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function Hero() {
-  const handlePixCopy = () => {
-    navigator.clipboard.writeText("50.615.676/0001-68");
-    alert("Chave PIX copiada para a área de transferência!");
-  };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Container da imagem de fundo */}
-      <div className="absolute inset-0">
-        <Image
-          src={heroImage}
-          alt="Campanha"
-          fill
-          className="object-cover object-center" // Adicionei object-center
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80"></div>
+     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroImage.src})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
       </div>
-
-      {/* Conteúdo principal */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          NATAL NA ESTRUTURAL 2025 🎄
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-          Transforme o Natal de uma criança e traga luz onde falta esperança!
-        </p>
-
-        {/* Container dos botões */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <Button
-            onClick={handlePixCopy}
-            size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-8 py-3"
-          >
-            Doar via PIX
-          </Button>
+      
+      <div className="container mx-auto px-4 relative z-10 text-center py-20">
+        <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight drop-shadow-2xl">
+            Transforme o Natal de uma Criança
+          </h1>
           
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-2 border-white text-white hover:bg-white/10 bg-transparent backdrop-blur-sm"
-            onClick={() =>
-              document
-                .getElementById("children")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            <Heart className="mr-2 h-5 w-5" /> Conhecer as crianças
-          </Button>
-        </div>
-
-        {/* Texto do PIX */}
-        <div className="mt-8">
-          <p className="text-white/90 text-sm md:text-base mb-2">
-            PIX CNPJ:
+          <p className="text-xl md:text-2xl text-white/95 max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
+            Sua contribuição pode espalhar alegria e multiplicar sorrisos! 
+            Ajude as crianças da Estrutural a terem um Natal mágico.
           </p>
-          <div className="font-mono text-white bg-blue-700 px-4 py-2 rounded-lg backdrop-blur-sm inline-block">
-            50.615.676/0001-68
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center pt-6 max-w-3xl mx-auto">
+            <Button 
+              size="lg" 
+              variant="default"
+              className="text-base px-6 py-6 h-auto w-full"
+              onClick={() => document.getElementById('kits')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Gift className="mr-2 h-5 w-5" />
+              Doar 1 kit de Natal
+            </Button>
+            
+            <Button 
+              size="lg" 
+              variant="ghost"
+              className="text-base px-6 py-6 h-auto bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 w-full"
+              onClick={() => document.getElementById('children')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Heart className="mr-2 h-5 w-5" />
+              Conhecer as Crianças
+            </Button>
+
+            <Button 
+              size="lg" 
+              variant="ghost"
+              className="text-base px-6 py-6 h-auto bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 w-full"
+              onClick={() => document.getElementById('sponsorship')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Heart className="mr-2 h-5 w-5" />
+              Apadrinhar Edukhação de 1 criança em 2026
+            </Button>
+
+            <Button 
+              size="lg" 
+              variant="ghost"
+              className="text-base px-6 py-6 h-auto bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 w-full"
+              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Heart className="mr-2 h-5 w-5" />
+              Conhecer o Edukhan
+            </Button>
           </div>
         </div>
       </div>

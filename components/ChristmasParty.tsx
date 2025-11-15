@@ -1,5 +1,5 @@
 import Image from "next/image";
-import partyImage from "@/public/mus5.jpg"
+import partyImage from "@/public/mus-8.jpg"
 import { Calendar, Clock, MapPin, PartyPopper } from "lucide-react";
 
 export default function ChristmasParty() {
