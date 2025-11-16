@@ -4,12 +4,42 @@ import ChildCard from "./ChildCard";
 
 export default function ChildrenGallery() {
   const children = [
-    { name: "Maria", age: 8, gift: "Boneca" },
-    { name: "João", age: 10, gift: "Bola de futebol" },
-    { name: "Ana", age: 7, gift: "Kit de pintura" },
-    { name: "Pedro", age: 9, gift: "Carrinho de controle remoto" },
-    { name: "Julia", age: 6, gift: "Conjunto de massinha" },
-    { name: "Lucas", age: 11, gift: "Jogo de tabuleiro" },
+    { 
+      name: "Amanda",
+      gift: "Kit Maquiagem Infantil",
+      photo: "/criancas/Amanda_Oliveira.jpeg",        // Removido /public
+      letter: "/Cartinhas de Natal 2025/Amanda_Oliveira.jpg" // Removido /public
+    },
+    { 
+      name: "Benjamim",
+      gift: "Carrinho de controle remoto",
+      photo: "/criancas/Benjamim_Sousa.jpeg",
+      letter: "/Cartinhas de Natal 2025/Benjamim_Sousa.jpg", // Corrigido para letter
+    },
+    { 
+      name: "Calebe",
+      gift: "Camera Fotográfica Infantil",
+      photo: "/criancas/Calebe_Rodrigues.jpeg",
+      letter: "/Cartinhas de Natal 2025/Calebe_Rodrigues.jpg", // Corrigido para letter
+    },
+    { 
+      name: "Davi Barbosa",
+      gift: "Carrinho de controle remoto",
+      photo: "/criancas/Davi_Barbosa.jpeg",
+      letter: "/Cartinhas de Natal 2025/Davi_Barbosa.jpg", // Corrigido para letter
+    },
+    { 
+      name: "Laylah Beatriz",
+      gift: "Boneca",
+      photo: "/criancas/Laylah_Beatriz.jpeg",
+      letter: "/Cartinhas de Natal 2025/Laylah_Beatriz.jpg", // Corrigido para letter
+    },
+    { 
+      name: "Maria Eduarda", 
+      gift: "Boneca Barbie",
+      photo: "/criancas/Maria_Eduarda.jpeg",
+      letter: "/Cartinhas de Natal 2025/Maria_Eduarda.jpg", // Corrigido para letter
+    },
   ];
 
   return (
@@ -31,8 +61,6 @@ export default function ChildrenGallery() {
               <ChildCard key={index} {...child} />
             ))}
           </div>
-
-          
         </div>
       </div>
     </section>

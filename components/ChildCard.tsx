@@ -4,17 +4,23 @@ import Image from "next/image";
 
 interface ChildCardProps {
   name: string;
-  age: number;
   gift: string;
   photo?: string;
+  letter?: string;
 }
 
-export default function ChildCard({ name, age, gift, photo }: ChildCardProps) {
+export default function ChildCard({ name, gift, photo, letter }: ChildCardProps) {
   const handleWhatsApp = () => {
     window.open(
       "https://wa.me/5561981311414?text=Olá! Gostaria de doar um presente para uma criança do Edukhan.",
       "_blank"
     );
+  };
+
+  const handleOpenLetter = () => {
+    if (letter) {
+      window.open(letter, "_blank");
+    }
   };
 
   return (
@@ -27,6 +33,7 @@ export default function ChildCard({ name, age, gift, photo }: ChildCardProps) {
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority={false}
           />
         ) : (
           <div className="text-6xl">👧🏽</div>
@@ -37,7 +44,6 @@ export default function ChildCard({ name, age, gift, photo }: ChildCardProps) {
       <div className="p-6 space-y-4">
         <div>
           <h3 className="text-xl font-bold text-foreground">{name}</h3>
-          <p className="text-muted-foreground">{age} anos</p>
         </div>
 
         <div className="bg-blue-700/5 p-4 rounded-lg border border-blue-700/20">
@@ -49,9 +55,15 @@ export default function ChildCard({ name, age, gift, photo }: ChildCardProps) {
         </div>
 
         <div className="space-y-2">
-          <Button variant="outline" className="w-full justify-start" size="sm">
+          <Button 
+            variant="outline" 
+            className="w-full justify-start" 
+            size="sm" 
+            onClick={handleOpenLetter} 
+            disabled={!letter}
+          >
             <FileText className="mr-2 h-4 w-4" />
-            Ler Cartinha de Natal
+            {letter ? "Ler Cartinha de Natal" : "Cartinha em breve"}
           </Button>
 
           <Button
@@ -64,7 +76,12 @@ export default function ChildCard({ name, age, gift, photo }: ChildCardProps) {
             Quero Doar Este Presente
           </Button>
 
-          <Button variant="outline" className="w-full justify-start" size="sm" onClick={() => document.getElementById('sponsorship')?.scrollIntoView({ behavior: 'smooth' })}>
+          <Button 
+            variant="outline" 
+            className="w-full justify-start" 
+            size="sm" 
+            onClick={() => document.getElementById('sponsorship')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             <Heart className="mr-2 h-4 w-4" />
             Apadrinhar Edukhação/2026
           </Button>
