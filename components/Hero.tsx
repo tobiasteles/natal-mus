@@ -8,13 +8,9 @@ import { Button } from "./ui/button";
 export default function Hero() {
   return (
       <section id="hero" className="relative flex flex-col md:min-h-[90vh] md:items-center md:justify-center overflow-hidden">
-      <div 
-        className=""
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
         <Image alt="Festa" src={heroImage} className="h-[60vh] md:h-auto md:absolute md:inset-0 bg-cover bg-top" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-white md:from-black/50 md:via-black/40 md:to-background" />
-      </div>
+        <div className="absolute inset-0 object-cover bg-gradient-to-b from-black/30 via-transparent to-white md:from-black/50 md:via-black/40 md:to-background" />
+      
       
       <div className="bg-white md:bg-transparent relative z-10 md:container md:mx-auto px-4 py-8 md:py-20">
         <div className="max-w-4xl mx-auto space-y-6 md:space-y-8 animate-fade-in md:text-center">

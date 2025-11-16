@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
@@ -45,7 +46,7 @@ export default function Navbar() {
             onClick={() => scrollToSection('hero')}
             className="text-xl font-bold text-blue-700 hover:text-blue-700/80 transition-colors"
           >
-            Edukhan
+            <Image alt="Logo" src="/SÍMBOLO 5.jpg" width={50} height={65} className="rounded-full object-cover shadow-sm" />
           </button>
 
           {/* Desktop Menu */}
