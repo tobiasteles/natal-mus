@@ -8,37 +8,37 @@ export default function ChildrenGallery() {
       name: "Amanda",
       gift: "Kit Maquiagem Infantil",
       photo: "/criancas/Amanda_Oliveira.jpeg",        // Removido /public
-      letter: "/Cartinhas de Natal 2025/Amanda_Oliveira.jpg" // Removido /public
+      letter: "/Cartinhas-2025/Amanda_Oliveira.jpg" // Removido /public
     },
     { 
       name: "Benjamim",
       gift: "Carrinho de controle remoto",
-      photo: "/criancas/Benjamim_Sousa.jpg",
-      letter: "/Cartinhas de Natal 2025/Benjamim_Sousa.jpg", // Corrigido para letter
+      photo: "/criancas/Benjamim_Sousa.jpeg",
+      letter: "/Cartinhas-2025/Benjamim_Sousa.jpg", // Corrigido para letter
     },
     { 
       name: "Calebe",
       gift: "Camera Fotográfica Infantil",
-      photo: "/criancas/Calebe_Rodrigues.jpg",
-      letter: "/Cartinhas de Natal 2025/Calebe_Rodrigues.jpg", // Corrigido para letter
+      photo: "/criancas/Calebe_Rodrigues.jpeg",
+      letter: "/Cartinhas-2025/Calebe_Rodrigues.jpg", // Corrigido para letter
     },
     { 
       name: "Davi Barbosa",
       gift: "Carrinho de controle remoto",
-      photo: "/criancas/Davi_Barbosa.jpg",
-      letter: "/Cartinhas de Natal 2025/Davi_Barbosa.jpg", // Corrigido para letter
+      photo: "/criancas/Davi_Barbosa.jpeg",
+      letter: "/Cartinhas-2025/Davi_Barbosa.jpg", // Corrigido para letter
     },
     { 
       name: "Laylah Beatriz",
       gift: "Boneca",
-      photo: "/criancas/Laylah_Beatriz.jpg",
-      letter: "/Cartinhas de Natal 2025/Laylah_Beatriz.jpg", // Corrigido para letter
+      photo: "/criancas/Laylah_Beatriz.jpeg",
+      letter: "/Cartinhas-2025/Laylah_Beatriz.jpg", // Corrigido para letter
     },
     { 
       name: "Maria Eduarda", 
       gift: "Boneca Barbie",
-      photo: "/criancas/Maria_Eduarda.jpg",
-      letter: "/Cartinhas de Natal 2025/Maria_Eduarda.jpg", // Corrigido para letter
+      photo: "/criancas/Maria_Eduarda.jpeg",
+      letter: "/Cartinhas-2025/Maria_Eduarda.jpg", // Corrigido para letter
     },
   ];
 
