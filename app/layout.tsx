@@ -42,7 +42,7 @@ export default function RootLayout({
         <link rel="icon" href="/app/favicon.ico"  />
         <meta property="og:title" content="Campanha de Natal 2025 - Instituto Edukhan - Multiplicando Sorrisos" />
         <meta  property="og:description" content="Transforme o Natal de uma criança da Estrutural. Doe via PIX: 50.615.676/0001-68"/>
-        <meta property="og:image" content="/simbolo_natal.png"/>
+        <meta property="og:image" content="https://sonhosdenatal.vercel.app/_next/image?url=%2Fsimbolo_natal.png&w=64&q=75"/>
          <meta property="og:url" content="https://sonhosdenatal.vercel.app/" />
       </head>
       <body className={`${inter.variable} ${poppins.variable} font-sans`}>
