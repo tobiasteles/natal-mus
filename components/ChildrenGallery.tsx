@@ -13,31 +13,31 @@ export default function ChildrenGallery() {
     { 
       name: "Benjamim",
       gift: "Carrinho de controle remoto",
-      photo: "/criancas/Benjamim_Sousa.jpeg",
+      photo: "/criancas/Benjamim_Sousa.jpg",
       letter: "/Cartinhas-2025/Benjamim_Sousa.jpg", // Corrigido para letter
     },
     { 
       name: "Calebe",
       gift: "Camera Fotográfica Infantil",
-      photo: "/criancas/Calebe_Rodrigues.jpeg",
+      photo: "/criancas/Calebe_Rodrigues.jpg",
       letter: "/Cartinhas-2025/Calebe_Rodrigues.jpg", // Corrigido para letter
     },
     { 
       name: "Davi Barbosa",
       gift: "Carrinho de controle remoto",
-      photo: "/criancas/Davi_Barbosa.jpeg",
+      photo: "/criancas/Davi_Barbosa.jpg",
       letter: "/Cartinhas-2025/Davi_Barbosa.jpg", // Corrigido para letter
     },
     { 
       name: "Laylah Beatriz",
       gift: "Boneca",
-      photo: "/criancas/Laylah_Beatriz.jpeg",
+      photo: "/criancas/Laylah_Beatriz.jpg",
       letter: "/Cartinhas-2025/Laylah_Beatriz.jpg", // Corrigido para letter
     },
     { 
       name: "Maria Eduarda", 
       gift: "Boneca Barbie",
-      photo: "/criancas/Maria_Eduarda.jpeg",
+      photo: "/criancas/Maria_Eduarda.jpg",
       letter: "/Cartinhas-2025/Maria_Eduarda.jpg", // Corrigido para letter
     },
   ];
