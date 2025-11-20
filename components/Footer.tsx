@@ -44,8 +44,22 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm flex items-center justify-center gap-2">
               Feito com <Heart className="h-4 w-4 text-blue-700 fill-blue-700" /> para as crianças da Estrutural
             </p>
+
             <p className="text-muted-foreground text-xs mt-2">
               © 2025 Instituto Edukhan - Campanha de Natal
+            </p>
+
+            {/* Créditos discretos para você */}
+            <p className="text-[10px] text-muted-foreground mt-1">
+              Desenvolvido por{" "}
+              <a
+                href="https://www.linkedin.com/in/tobias-teles"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-700 transition-colors"
+              >
+                Tobias Teles
+              </a>
             </p>
           </div>
         </div>
