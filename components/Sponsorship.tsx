@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 export default function Sponsorship() {
   const handleWhatsApp = () => {
     window.open(
-      "https://wa.me/5561981311414?text=Olá! Gostaria de apadrinhar a educação de uma criança do Edukhan em 2026.",
+      "https://www.doe.edukhan.ong.br/subscribe/200edukoins12",
       "_blank"
     );
   };

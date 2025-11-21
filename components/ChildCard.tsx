@@ -12,7 +12,7 @@ interface ChildCardProps {
 export default function ChildCard({ name, gift, photo, letter }: ChildCardProps) {
   const handleWhatsApp = () => {
     window.open(
-      "https://wa.me/5561981311414?text=Olá! Gostaria de doar um presente para uma criança do Edukhan.",
+      "https://www.doe.edukhan.ong.br/subscribe/200edukoins12",
       "_blank"
     );
   };
