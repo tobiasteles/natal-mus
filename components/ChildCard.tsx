@@ -10,12 +10,18 @@ interface ChildCardProps {
 }
 
 export default function ChildCard({ name, gift, photo, letter }: ChildCardProps) {
+  
+  const whatsappNumber = "5561981311414"; // (61) 98131-1414
+  const message = "Olá! Quero doar um presente para campanha de Natal do Instituto Edukhan.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
   const handleWhatsApp = () => {
     window.open(
-      "https://www.doe.edukhan.ong.br/subscribe/200edukoins12",
+      whatsappUrl,
       "_blank"
     );
   };
+
 
   const handleOpenLetter = () => {
     if (letter) {

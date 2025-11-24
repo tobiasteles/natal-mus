@@ -45,52 +45,152 @@ export default function ChildrenGallery() {
       letter: "/Cartinhas-2025/Maria_Eduarda.jpg", // Corrigido para letter
     },
     {
-      name: "Maria Eduarda",
-      gift: "Boneca Barbie",
-      photo: "/criancas/Maria_Eduarda.JPG",
-      letter: "/Cartinhas-2025/Maria_Eduarda.jpg", // Corrigido para letter
+      name: "Catarina Bastos",
+      gift: "Roupa 7anos / Bebê Reborn",
+      photo: "/criancas/Catarina.jpg",
+      letter: "/Cartinhas-2025/Catarina.jpg", // Corrigido para letter
     },
     {
-      name: "Maria Eduarda",
-      gift: "Boneca Barbie",
-      photo: "/criancas/Maria_Eduarda.JPG",
-      letter: "/Cartinhas-2025/Maria_Eduarda.jpg", // Corrigido para letter
+      name: "Cibelly de Carvalho",
+      gift: "Bebê Reborn",
+      photo: "/criancas/Cibelly_Carvalho.JPG",
+      letter: "/Cartinhas-2025/Cibelly_Carvalho.jpg", // Corrigido para letter
     },
     {
-      name: "Maria Eduarda",
-      gift: "Boneca Barbie",
-      photo: "/criancas/Maria_Eduarda.JPG",
-      letter: "/Cartinhas-2025/Maria_Eduarda.jpg", // Corrigido para letter
+      name: "Cindy Alexia",
+      gift: "BobieGoods / Stitch",
+      photo: "/criancas/Cindy.jpeg",
+      letter: "/Cartinhas-2025/Cindy.jpg", // Corrigido para letter
     },
     {
-      name: "Maria Eduarda",
-      gift: "Boneca Barbie",
-      photo: "/criancas/Maria_Eduarda.JPG",
-      letter: "/Cartinhas-2025/Maria_Eduarda.jpg", // Corrigido para letter
+      name: "Davi Felipe",
+      gift: "Câmera fotográfica infantil/Coleção Diário de um Banana",
+      photo: "/criancas/Davi_Felipe.JPG",
+      letter: "/Cartinhas-2025/Davi_Felipe.jpg", // Corrigido para letter
     },
     {
-      name: "Maria Eduarda",
-      gift: "Boneca Barbie",
-      photo: "/criancas/Maria_Eduarda.JPG",
-      letter: "/Cartinhas-2025/Maria_Eduarda.jpg", // Corrigido para letter
+      name: "Davi Henrique",
+      gift: "Homem Aranha/Naruto/Carrinho controle remoto",
+      photo: "/criancas/Davi Henrique.JPG",
+      letter: "/Cartinhas-2025/Davi_Henrique.jpg", // Corrigido para letter
     },
     {
-      name: "Maria Eduarda",
-      gift: "Boneca Barbie",
-      photo: "/criancas/Maria_Eduarda.JPG",
-      letter: "/Cartinhas-2025/Maria_Eduarda.jpg", // Corrigido para letter
+      name: "Davi Lucca",
+      gift: "Arco e flecha/Robô",
+      photo: "/criancas/Davi_Lucca.JPG",
+      letter: "/Cartinhas-2025/Davi_Lucca.jpg", // Corrigido para letter
     },
     {
-      name: "Maria Eduarda",
-      gift: "Boneca Barbie",
-      photo: "/criancas/Maria_Eduarda.JPG",
-      letter: "/Cartinhas-2025/Maria_Eduarda.jpg", // Corrigido para letter
+      name: "Deynner Jesus",
+      gift: "Carrinho corrida/ Tenis Homem Aranha 29",
+      photo: "/criancas/Deynner.jpeg",
+      letter: "/Cartinhas-2025/Deynner.jpg", // Corrigido para letter
+    },
+    {
+      name: "Emanoel Evangelista",
+      gift: "Uniforme Cruzeiro",
+      photo: "/criancas/Emanoel.JPG",
+      letter: "/Cartinhas-2025/Emanoel.jpg", // Corrigido para letter
+    },
+    {
+      name: "Ester Ferreira",
+      gift: "Bicicleta 4 anos/Barbie",
+      photo: "/criancas/Ester_Ferreira.JPG",
+      letter: "/Cartinhas-2025/Ester_Ferreira.jpg", // Corrigido para letter
+    },
+    {
+      name: "Isabella Sousa",
+      gift: "Bebe Reborn/Patins 31-32",
+      photo: "/criancas/Isabella_Sousa.JPG",
+      letter: "/Cartinhas-2025/Isabella_Sousa.jpg", // Corrigido para letter
+    },
+    {
+      name: "Isabelly Batista",
+      gift: "Roupa 10 anos/Kit Escolar",
+      photo: "/criancas/Isabelly_batista.JPG",
+      letter: "/Cartinhas-2025/Isabelly_Batista.jpg", // Corrigido para letter
+    },
+    {
+      name: "Jhennifer Gabrielly",
+      gift: "Kit Escolar/ Patins 35-36",
+      photo: "/criancas/Jennyfer.jpeg",
+      letter: "/Cartinhas-2025/Jennyfer.jpg", // Corrigido para letter
+    },
+    {
+      name: "José Arthur",
+      gift: "Tênis Nike/Uniforme Santos",
+      photo: "/criancas/Jose_Arthur.jpeg",
+      letter: "/Cartinhas-2025/Jose_Arthur.jpg", // Corrigido para letter
+    },
+    {
+      name: "Jesus Alerrandro",
+      gift: "Beyblade/Skate",
+      photo: "/criancas/Jesus_Alerandro.JPG",
+      letter: "/Cartinhas-2025/Jesus_Alerandro.jpg", // Corrigido para letter
+    },
+    {
+      name: "Júlio Cesar",
+      gift: "Tênis Nike/Uniforme Santos",
+      photo: "/criancas/Julio.JPG",
+      letter: "/Cartinhas-2025/Julio.jpg", // Corrigido para letter
+    },
+    {
+      name: "Lorenna Souza",
+      gift: "Stitch/Cozinha/Boneca",
+      photo: "/criancas/Lorenna_Sousa.jpeg",
+      letter: "/Cartinhas-2025/Lorenna_Sousa.jpg", // Corrigido para letter
+    },
+    {
+      name: "Maria Fernanda",
+      gift: "Kit cozinha/Kit médico",
+      photo: "/criancas/Maria_Fernanda.JPG",
+      letter: "/Cartinhas-2025/Maria_Fernanda.jpg", // Corrigido para letter
+    },
+    {
+      name: "Maria Helena",
+      gift: "Barbie Sereia/Kit Pulseira",
+      photo: "/criancas/Maria_Helena.JPG",
+      letter: "/Cartinhas-2025/Maria_Helena.jpg", // Corrigido para letter
+    },
+    {
+      name: "Miguel da Silva",
+      gift: "Beyblade/Cartinhas Pokemon",
+      photo: "/criancas/Miguel_da_Silva.JPG",
+      letter: "/Cartinhas-2025/Miguel_da_Silva.jpg", // Corrigido para letter
+    },
+    {
+      name: "Nicolas Samuel",
+      gift: "Carretilha Pipa/Cartinhas Pokemon",
+      photo: "/criancas/Nicolas_Samuel.JPG",
+      letter: "/Cartinhas-2025/Nicolas_Samuel.jpg", // Corrigido para letter
+    },
+    {
+      name: "Sarah Emanoele",
+      gift: "Kit Pulseira Barbie",
+      photo: "/criancas/Sarah_Emanoele.JPG",
+      letter: "/Cartinhas-2025/Sarah_Emanoele.jpg", // Corrigido para letter
+    },
+    {
+      name: "Stella Mota",
+      gift: "Patinete/Boneca",
+      photo: "/criancas/Stella_Mota.JPG",
+      letter: "/Cartinhas-2025/Stella_Mota.jpg", // Corrigido para letter
+    },
+    {
+      name: "Talia Emanuelly",
+      gift: "Bebe Reborn/Patins 31/37-38",
+      photo: "/criancas/Talia_Emanuelly.JPG",
+      letter: "/Cartinhas-2025/Talia_Emanuelly.jpg", // Corrigido para letter
     },
   ];
 
   const start = (page - 1) * pageSize;
   const currentChildren = children.slice(start, start + pageSize);
   const totalPages = Math.ceil(children.length / pageSize);
+
+
+  
+
 
   return (
     <section id="children" className="py-20 bg-background">
