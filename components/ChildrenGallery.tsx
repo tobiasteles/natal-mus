@@ -71,7 +71,7 @@ export default function ChildrenGallery() {
     {
       name: "Davi Henrique",
       gift: "Homem Aranha/Naruto/Carrinho controle remoto",
-      photo: "/criancas/Davi Henrique.JPG",
+      photo: "/criancas/Davi Henrique.jpg",
       letter: "/Cartinhas-2025/Davi_Henrique.jpg", // Corrigido para letter
     },
     {
@@ -107,7 +107,7 @@ export default function ChildrenGallery() {
     {
       name: "Isabelly Batista",
       gift: "Roupa 10 anos/Kit Escolar",
-      photo: "/criancas/Isabelly_batista.JPG",
+      photo: "/criancas/Isabelly_batista.jpg",
       letter: "/Cartinhas-2025/Isabelly_Batista.jpg", // Corrigido para letter
     },
     {
@@ -149,13 +149,13 @@ export default function ChildrenGallery() {
     {
       name: "Maria Helena",
       gift: "Barbie Sereia/Kit Pulseira",
-      photo: "/criancas/Maria_Helena.JPG",
+      photo: "/criancas/Maria_Helena.jpg",
       letter: "/Cartinhas-2025/Maria_Helena.jpg", // Corrigido para letter
     },
     {
       name: "Miguel da Silva",
       gift: "Beyblade/Cartinhas Pokemon",
-      photo: "/criancas/Miguel_da_Silva.JPG",
+      photo: "/criancas/Miguel_da_Silva.jpg",
       letter: "/Cartinhas-2025/Miguel_da_Silva.jpg", // Corrigido para letter
     },
     {
@@ -173,13 +173,13 @@ export default function ChildrenGallery() {
     {
       name: "Stella Mota",
       gift: "Patinete/Boneca",
-      photo: "/criancas/Stella_Mota.JPG",
+      photo: "/criancas/Stella_Mota.jpg",
       letter: "/Cartinhas-2025/Stella_Mota.jpg", // Corrigido para letter
     },
     {
       name: "Talia Emanuelly",
       gift: "Bebe Reborn/Patins 31/37-38",
-      photo: "/criancas/Talia_Emanuelly.JPG",
+      photo: "/criancas/Talia_Emanuelly.jpg",
       letter: "/Cartinhas-2025/Talia_Emanuelly.jpg", // Corrigido para letter
     },
   ];
