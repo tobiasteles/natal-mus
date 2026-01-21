@@ -2,65 +2,96 @@
 
 import Image from "next/image";
 import heroImage from "@/public/mus-capa.jpg";
-import { Gift, Heart } from "lucide-react";
+import { Info, Construction, Users, HandHeart } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function Hero() {
+  const openLink = (url: string) => {
+    window.open(url, '_blank');
+  };
+
   return (
-      <section id="hero" className="relative flex flex-col md:min-h-[90vh] md:items-center md:justify-center overflow-hidden">
-        <Image alt="Festa" src={heroImage} className="h-[60vh] md:h-auto md:absolute md:inset-0 bg-cover bg-top" />
-        <div className="absolute inset-0 object-cover bg-gradient-to-b from-black/30 via-transparent to-white md:from-black/50 md:via-black/40 md:to-background" />
+    <section id="hero" className="relative flex flex-col min-h-[85vh] md:min-h-screen items-center justify-center overflow-hidden">
       
+      {/* Imagem de Fundo com Correção de Distorção */}
+      <div className="absolute inset-0 z-0">
+        <Image 
+          alt="Natal Solidário Edukhan" 
+          src={heroImage} 
+          fill
+          priority
+          quality={100}
+          className="object-cover object-top md:object-center transition-all duration-700"
+        />
+        {/* Overlay para contraste */}
+        <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/20 to-black/80 md:to-black/60" />
+      </div>
       
-      <div className="bg-white md:bg-transparent relative z-10 md:container md:mx-auto px-4 py-8 md:py-20">
-        <div className="max-w-4xl mx-auto space-y-6 md:space-y-8 animate-fade-in md:text-center">
-          <h1 className="text-4xl md:text-7xl font-bold text-foreground md:text-white leading-tight md:drop-shadow-2xl">
-            Transforme o Natal de uma Criança da Estrutural
+      <div className="relative z-10 container mx-auto px-4 py-20">
+        <div className="max-w-4xl mx-auto space-y-8 animate-fade-in text-center">
+          
+          {/* Título com Sombra para Leitura Máxima */}
+          <h1 className="text-4xl md:text-7xl font-black text-white leading-[1.1] drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
+            Transforme o Natal de uma <br className="hidden md:block"/> 
+            <span className="text-red-500">Criança</span> da Estrutural
           </h1>
           
-  
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-center pt-4 max-w-2xl mx-auto">
+          <p className="text-white/90 text-lg md:text-2xl font-medium max-w-2xl mx-auto drop-shadow-md font-mono uppercase tracking-tight">
+            Sua generosidade é o motor de transformação para o Edukhan! 🎄✨
+          </p>
+
+          {/* Grid de Botões Atualizado */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center pt-6 max-w-3xl mx-auto">
+            
+            {/* Botão Conhecer Alunos */}
             <Button 
-              size="default" 
-              variant="festive"
-              className="text-sm px-3 py-2 h-auto"
-              onClick={() => document.getElementById('kits')?.scrollIntoView({ behavior: 'smooth' })}
+              size="lg" 
+              className="w-full text-base font-black h-16 shadow-xl bg-red-600 hover:bg-red-700 text-white uppercase tracking-tighter hover:scale-105 transition-transform"
+              onClick={() => openLink('https://www.edukhan.ong.br/doe')}
             >
-              <Gift className="mr-2 h-4 w-4" />
-              Doar 1 kit de Natal
+              <Users className="mr-2 h-6 w-6" />
+              Conhecer os Alunos
             </Button>
             
+            {/* Botão Reforma */}
             <Button 
-              size="default" 
+              size="lg" 
               variant="outline"
-              className="text-sm px-3 py-2 h-auto bg-white/10 backdrop-blur-sm border-white/30 md:text-white md:hover:bg-white/20"
-              onClick={() => document.getElementById('children')?.scrollIntoView({ behavior: 'smooth' })}
+              className="w-full text-base font-black h-16 bg-white/10 backdrop-blur-md border-white/40 text-white hover:bg-white/20 uppercase tracking-tighter"
+              onClick={() => openLink('https://reforma.edukhan.ong.br/')}
             >
-              <Heart className="mr-2 h-4 w-4" />
-              Conhecer as Crianças
+              <Construction className="mr-2 h-6 w-6 text-yellow-400" />
+              Ajude a Reformar a Nova Sede
             </Button>
 
+            {/* Botão Edukamigo */}
             <Button 
-              size="default" 
+              size="lg" 
               variant="outline"
-              className="text-sm px-3 py-2 h-auto bg-white/10 backdrop-blur-sm border-white/30 md:text-white md:hover:bg-white/20"
-              onClick={() => document.getElementById('sponsorship')?.scrollIntoView({ behavior: 'smooth' })}
+              className="w-full text-base font-black h-16 bg-white/10 backdrop-blur-md border-white/40 text-white hover:bg-white/20 uppercase tracking-tighter"
+              onClick={() => openLink('https://www.edukhan.ong.br/doe')}
             >
-              <Heart className="mr-2 h-4 w-4" />
-              Apadrinhar Edukhação de 1 criança em 2026
+              <HandHeart className="mr-2 h-6 w-6 text-pink-500" />
+              Torne-se um Edukamigo
             </Button>
 
+            {/* Botão Institucional */}
             <Button 
-              size="default" 
+              size="lg" 
               variant="outline"
-              className="text-sm px-3 py-2 h-auto bg-white/10 backdrop-blur-sm border-white/30 md:text-white md:hover:bg-white/20"
-              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+              className="w-full text-base font-black h-16 bg-white/10 backdrop-blur-md border-white/40 text-white hover:bg-white/20 uppercase tracking-tighter"
+              onClick={() => openLink('https://www.edukhan.ong.br/')}
             >
-              <Heart className="mr-2 h-4 w-4" />
-              Conhecer o Edukhan
+              <Info className="mr-2 h-6 w-6 text-blue-400" />
+              Conheça o Edukhan
             </Button>
           </div>
         </div>
+      </div>
+
+      {/* Indicador de Scroll */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
+        <div className="w-1 h-12 bg-linear-to-b from-white to-transparent rounded-full" />
       </div>
     </section>
   );

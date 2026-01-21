@@ -5,24 +5,39 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl text-sm font-black uppercase tracking-tight transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-5 shrink-0 [&_svg]:shrink-0 outline-none active:scale-95",
   {
     variants: {
       variant: {
-        default: "bg-green-600 text-white shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-200 border-2 border-green-500 hover:border-green-300 font-semibold",
-        destructive: "bg-red-600 text-white hover:bg-red-700 shadow-md transition-colors duration-200 border-2 border-red-500",
-        outline: "border-2 border-green-500 bg-transparent text-green-600 hover:bg-green-50 hover:text-green-700 transition-colors duration-200",
-        secondary: "bg-red-500 text-white hover:bg-red-600 shadow-md transition-colors duration-200 border-2 border-red-400",
-        ghost: "hover:bg-green-50 hover:text-green-700 text-green-600 transition-colors duration-200",
-        link: "text-red-500 underline-offset-4 hover:text-red-600 hover:underline font-semibold transition-colors",
-        festive: "bg-gradient-to-r from-green-500 to-green-700 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group hover:scale-105 border-2 border-yellow-300",
-        donate: "bg-gradient-to-b from-yellow-400 to-yellow-500 text-red-700 font-bold shadow-md hover:shadow-lg transition-all duration-200 border-2 border-yellow-300 hover:scale-105"
+        // Azul Royal Principal - Forçado com Hexadecimal
+        default: "bg-[#0a28e6] text-white border-4 border-[#020617] shadow-[4px_4px_0px_#020617] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]",
+        
+        // Rosa Edukhan (Ações de Doação) - Forçado com Hexadecimal
+        destructive: "bg-[#e60a78] text-white border-4 border-[#020617] shadow-[4px_4px_0px_#020617] hover:bg-[#c50866] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]",
+        
+        // Estilo Outline com borda azul marinho forte
+        outline: "border-4 border-[#0a28e6] bg-white text-[#0a28e6] shadow-[4px_4px_0px_rgba(10,40,230,0.1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]",
+        
+        // Azul Celeste (Secondary)
+        secondary: "bg-[#0aaae6] text-white border-4 border-[#020617] shadow-[4px_4px_0px_#020617] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]",
+        
+        // Ghost para links
+        ghost: "text-[#0a28e6] hover:bg-[#0a28e6]/10",
+        
+        // Link clássico
+        link: "text-[#0a28e6] underline-offset-4 hover:underline",
+
+        // Amarelo Edukhan (Festive) - Texto em Azul Marinho para contraste
+        festive: "bg-[#FFD700] text-[#0a28e6] border-4 border-[#0a28e6] shadow-[4px_4px_0px_#0a28e6] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]",
+        
+        // Donate (Rosa com destaque)
+        donate: "bg-[#e60a78] text-white border-4 border-white shadow-[0_0_15px_rgba(230,10,120,0.4)] hover:scale-105"
       },
       size: {
-        default: "h-8 px-3 py-1.5",
-        sm: "h-7 px-2.5",
-        lg: "h-9 px-4",
-        icon: "size-8",
+        default: "h-12 px-6 py-2",
+        sm: "h-10 px-4 text-xs",
+        lg: "h-16 px-10 text-lg",
+        icon: "size-12",
       },
     },
     defaultVariants: {
