@@ -18,6 +18,7 @@ const kodeMono = Kode_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sonhosdenatal.vercel.app"),
   title: "Apadrinhamento Edukhan - Multiplicando Sorrisos",
   description:
     "Transforme vidas através do apadrinhamento e presenteie crianças da Estrutural. Escolha o seu afilhado!",
