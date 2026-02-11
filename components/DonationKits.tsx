@@ -1,6 +1,6 @@
 "use client";
 
-import { Gift, Instagram, ShoppingBag, Sparkles } from "lucide-react";
+import { BookOpen, Heart, Utensils, Instagram } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function DonationKits() {
@@ -9,117 +9,115 @@ export default function DonationKits() {
     alert("PIX CNPJ copiado! 50.615.676/0001-68");
   };
 
-
   return (
-    <section id="kits" className="py-20 bg-muted/30">
+    <section id="kits" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Como Você Pode Ajudar
+            <h2 className="text-4xl md:text-5xl font-black text-[#0a28e6] mb-4">
+              Apoie o Dia a Dia dos Nossos Alunos
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Escolha uma das opções de doação e faça a diferença
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Sua doação garante que nossas crianças tenham educação de qualidade e alimentação digna todos os meses.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-lg transition-all hover:-translate-y-2 border-2 border-blue-700/20">
-              <div className="bg-linear-to-br from-blue-700 to-blue-700/80 w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-glow">
-                <Sparkles className="h-8 w-8 text-white" />
+            {/* Kit Refeição - Foco em Alimentação */}
+            <div className="bg-card rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 border-t-8 border-[#99de81]">
+              <div className="bg-[#99de81]/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Utensils className="h-8 w-8 text-[#0a28e6]" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-blue-700">
-                Kit Natal Completo
+              <h3 className="text-2xl font-bold mb-4 text-[#0a28e6]">
+                Kit Alimentação
               </h3>
               <div className="text-4xl font-bold mb-6 text-foreground">
-                R$ 300
+                R$ 100
               </div>
               <p className="text-muted-foreground mb-6">
-                Kit Presente + Kit Festa para uma criança ter um Natal completo
-                e inesquecível
+                Garante refeições nutritivas e lanches para um aluno durante o mês letivo no Edukhan.
               </p>
               <Button
-                className="w-full"
+                className="w-full bg-[#99de81] hover:bg-[#4db5ea] text-[#0a28e6] font-bold"
                 size="lg"
-                variant="default"
                 onClick={handlePixCopy}
               >
-                Doar R$ 300
+                Doar R$ 100
               </Button>
             </div>
 
-            <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-lg transition-all hover:-translate-y-2">
-              <div className="bg-linear-to-br from-red-600 to-red-600/80 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Gift className="h-8 w-8 text-white" />
+            {/* Kit Educação - Foco em Material/Aulas */}
+            <div className="bg-card rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 border-t-8 border-[#6e55f5]">
+              <div className="bg-[#6e55f5]/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <BookOpen className="h-8 w-8 text-[#6e55f5]" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Kit Presente</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#6e55f5]">Kit Acadêmico</h3>
               <div className="text-4xl font-bold mb-6 text-foreground">
                 R$ 150
               </div>
               <ul className="text-muted-foreground mb-6 space-y-2">
-                <li>✓ 1 brinquedo</li>
-                <li>✓ 1 mochila</li>
-                <li>✓ 1 tênis</li>
-                <li>✓ Auxílio para o evento</li>
+                <li>✓ Materiais didáticos</li>
+                <li>✓ Reforço escolar</li>
+                <li>✓ Acesso a tecnologia</li>
+                <li>✓ Oficinas culturais</li>
               </ul>
               <Button
-                className="w-full"
+                className="w-full bg-[#6e55f5] hover:bg-[#0a28e6] text-white font-bold"
                 size="lg"
-                variant="outline"
                 onClick={handlePixCopy}
               >
                 Doar R$ 150
               </Button>
             </div>
 
-            <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-lg transition-all hover:-translate-y-2">
-              <div className="bg-linear-to-br from-green-600 to-green-600/80 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <ShoppingBag className="h-8 w-8 text-white" />
+            {/* Kit Transformação - Foco em Sustento da Sede/Geral */}
+            <div className="bg-card rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 border-t-8 border-[#e073e5]">
+              <div className="bg-[#e073e5]/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Heart className="h-8 w-8 text-[#e073e5]" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Kit Festa</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#e073e5]">Kit Transformação</h3>
               <div className="text-4xl font-bold mb-6 text-foreground">
-                R$ 150
+                R$ 250
               </div>
-              <ul className="text-muted-foreground mb-6 space-y-2">
-                <li>✓ 1 Cesta básica (16 itens)</li>
-                <li>✓ 1Kg peito de frango</li>
-                <li>✓ 1 Panetone</li>
-                <li>✓ 1 Refrigerante</li>
-                <li>✓ Auxílio para o evento</li>
-              </ul>
+              <p className="text-muted-foreground mb-6">
+                Apoio completo: alimentação, educação e manutenção da sede para acolher nossas famílias.
+              </p>
               <Button
-                className="w-full"
+                className="w-full bg-[#e073e5] hover:bg-[#6e55f5] text-white font-bold"
                 size="lg"
-                variant="outline"
                 onClick={handlePixCopy}
               >
-                Doar R$ 150
+                Doar R$ 250
               </Button>
             </div>
           </div>
 
-          
-
-
-          <div className="bg-blue-700/10 border border-blue-700/20 p-8 rounded-2xl">
+          {/* Footer de Doação */}
+          <div className="bg-[#4db5ea]/10 border-2 border-[#4db5ea]/30 p-8 rounded-2xl shadow-inner">
             <div className="text-center space-y-4">
-              <h3 className="text-2xl font-bold text-foreground">
+              <h3 className="text-2xl font-black text-[#0a28e6]">
                 Instituto Edukhan de Resgate Acadêmico e Escolar
               </h3>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-[#0a28e6] text-xl font-mono font-bold bg-white inline-block px-4 py-2 rounded-lg border border-[#4db5ea]">
                 PIX: 50.615.676/0001-68
               </p>
 
-              <Button size="lg" variant="default" onClick={handlePixCopy}>
-              Copiar PIX
-            </Button>
+              <div>
+                <Button 
+                  size="lg" 
+                  className="bg-[#0a28e6] hover:bg-[#6e55f5] text-white px-10 font-black uppercase tracking-widest"
+                  onClick={handlePixCopy}
+                >
+                  Copiar Chave PIX
+                </Button>
+              </div>
 
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-6 pt-4">
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-6 pt-6">
                 <a
                   href="https://www.instagram.com/edukhan_multiplicando_sorrisos"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-700 hover:text-blue-700/80 transition-colors font-medium"
+                  className="flex items-center gap-2 text-[#6e55f5] hover:text-[#0a28e6] transition-colors font-bold"
                 >
                   <Instagram className="h-5 w-5" />
                   @edukhan_multiplicando_sorrisos
@@ -129,7 +127,7 @@ export default function DonationKits() {
                   href="https://www.instagram.com/_edukhan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-700 hover:text-blue-700/80 transition-colors font-medium"
+                  className="flex items-center gap-2 text-[#6e55f5] hover:text-[#0a28e6] transition-colors font-bold"
                 >
                   <Instagram className="h-5 w-5" />
                   @_edukhan
